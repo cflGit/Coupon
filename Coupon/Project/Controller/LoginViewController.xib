@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="acountTextFiled" destination="z6s-fG-8jO" id="NSX-8c-cBI"/>
+                <outlet property="acountView" destination="9TY-bR-bcp" id="g4l-7H-h23"/>
+                <outlet property="loginAction" destination="fYZ-BQ-4yZ" id="xtd-ea-LBE"/>
+                <outlet property="pwTextFiled" destination="YAI-cE-RaQ" id="XSN-TJ-fiB"/>
+                <outlet property="pwView" destination="VR4-Pb-JBK" id="fzX-aI-3Cr"/>
+                <outlet property="storeTextFiled" destination="VcH-0w-WPG" id="RAe-HZ-6Gu"/>
+                <outlet property="storeView" destination="aSq-7X-O5w" id="f6m-PI-pzv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aifaquanbeijing.png" translatesAutoresizingMaskIntoConstraints="NO" id="piG-ez-v10">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xSc-IV-8xe">
+                    <rect key="frame" x="35" y="159" width="250" height="250"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSq-7X-O5w">
+                            <rect key="frame" x="16" y="50" width="218" height="34"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shanghuhaotubiao.png" translatesAutoresizingMaskIntoConstraints="NO" id="bk1-m7-6ns">
+                                    <rect key="frame" x="5" y="4" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="3If-fZ-Tdy"/>
+                                        <constraint firstAttribute="height" constant="25" id="bHV-1w-rPY"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入商户号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VcH-0w-WPG">
+                                    <rect key="frame" x="35" y="0.0" width="183" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="VcH-0w-WPG" secondAttribute="bottom" id="Fc0-Mb-hAv"/>
+                                <constraint firstAttribute="trailing" secondItem="VcH-0w-WPG" secondAttribute="trailing" id="H4B-E8-JMc"/>
+                                <constraint firstItem="bk1-m7-6ns" firstAttribute="leading" secondItem="aSq-7X-O5w" secondAttribute="leading" constant="5" id="NZG-Wc-GaL"/>
+                                <constraint firstItem="VcH-0w-WPG" firstAttribute="leading" secondItem="bk1-m7-6ns" secondAttribute="trailing" constant="5" id="Osg-HY-wyg"/>
+                                <constraint firstItem="VcH-0w-WPG" firstAttribute="top" secondItem="aSq-7X-O5w" secondAttribute="top" id="Rmt-ck-TxS"/>
+                                <constraint firstAttribute="width" constant="218" id="g4L-TG-PC7"/>
+                                <constraint firstAttribute="height" constant="34" id="gf7-yc-GbU"/>
+                                <constraint firstItem="bk1-m7-6ns" firstAttribute="centerY" secondItem="aSq-7X-O5w" secondAttribute="centerY" id="t9u-RV-fba"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TY-bR-bcp">
+                            <rect key="frame" x="16" y="94" width="218" height="34"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dengluzhanghaotubiao.png" translatesAutoresizingMaskIntoConstraints="NO" id="FnG-FU-72g">
+                                    <rect key="frame" x="5" y="4" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="2RN-EG-Mbd"/>
+                                        <constraint firstAttribute="height" constant="25" id="wbL-YI-Dvc"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z6s-fG-8jO">
+                                    <rect key="frame" x="35" y="0.0" width="183" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="z6s-fG-8jO" firstAttribute="top" secondItem="9TY-bR-bcp" secondAttribute="top" id="JKW-Hp-dxx"/>
+                                <constraint firstAttribute="height" constant="34" id="PcM-l3-OF1"/>
+                                <constraint firstAttribute="width" constant="218" id="QeU-QL-e0f"/>
+                                <constraint firstItem="FnG-FU-72g" firstAttribute="leading" secondItem="9TY-bR-bcp" secondAttribute="leading" constant="5" id="U0S-nk-TrP"/>
+                                <constraint firstItem="FnG-FU-72g" firstAttribute="centerY" secondItem="9TY-bR-bcp" secondAttribute="centerY" id="Xw9-Z4-jDt"/>
+                                <constraint firstAttribute="bottom" secondItem="z6s-fG-8jO" secondAttribute="bottom" id="aIk-CH-j4j"/>
+                                <constraint firstAttribute="trailing" secondItem="z6s-fG-8jO" secondAttribute="trailing" id="bJD-RE-klj"/>
+                                <constraint firstItem="z6s-fG-8jO" firstAttribute="leading" secondItem="FnG-FU-72g" secondAttribute="trailing" constant="5" id="gLd-Zj-XzV"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VR4-Pb-JBK">
+                            <rect key="frame" x="16" y="138" width="218" height="34"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mimatubiao.png" translatesAutoresizingMaskIntoConstraints="NO" id="RB4-Fy-giH">
+                                    <rect key="frame" x="5" y="4" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="25" id="Mex-OP-3JN"/>
+                                        <constraint firstAttribute="height" constant="25" id="jsk-Lh-f6G"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YAI-cE-RaQ">
+                                    <rect key="frame" x="35" y="0.0" width="183" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="YAI-cE-RaQ" firstAttribute="leading" secondItem="RB4-Fy-giH" secondAttribute="trailing" constant="5" id="CQs-gA-pg9"/>
+                                <constraint firstItem="RB4-Fy-giH" firstAttribute="centerY" secondItem="VR4-Pb-JBK" secondAttribute="centerY" id="Dao-sG-5d1"/>
+                                <constraint firstAttribute="width" constant="218" id="Ov5-9w-Vbz"/>
+                                <constraint firstAttribute="height" constant="34" id="PFu-zr-Hhb"/>
+                                <constraint firstAttribute="bottom" secondItem="YAI-cE-RaQ" secondAttribute="bottom" id="c7K-N5-ds2"/>
+                                <constraint firstItem="RB4-Fy-giH" firstAttribute="leading" secondItem="VR4-Pb-JBK" secondAttribute="leading" constant="5" id="eHo-H8-9lc"/>
+                                <constraint firstItem="YAI-cE-RaQ" firstAttribute="top" secondItem="VR4-Pb-JBK" secondAttribute="top" id="gNz-Nh-DZo"/>
+                                <constraint firstAttribute="trailing" secondItem="YAI-cE-RaQ" secondAttribute="trailing" id="yO8-gp-RV6"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYZ-BQ-4yZ">
+                            <rect key="frame" x="16" y="197" width="218" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="ZOE-nb-rZ4"/>
+                                <constraint firstAttribute="width" constant="218" id="ebF-VB-K2y"/>
+                            </constraints>
+                            <state key="normal" title="登陆" backgroundImage="dengluzhengchang.png"/>
+                            <state key="highlighted" title="登陆" backgroundImage="dengludianji.png"/>
+                            <connections>
+                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="DGq-19-HTD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VR4-Pb-JBK" firstAttribute="top" secondItem="9TY-bR-bcp" secondAttribute="bottom" constant="10" id="Dlu-tD-g7I"/>
+                        <constraint firstAttribute="height" constant="250" id="E2O-cw-0Ap"/>
+                        <constraint firstItem="aSq-7X-O5w" firstAttribute="centerX" secondItem="xSc-IV-8xe" secondAttribute="centerX" id="GAr-Ob-it8"/>
+                        <constraint firstItem="9TY-bR-bcp" firstAttribute="centerX" secondItem="xSc-IV-8xe" secondAttribute="centerX" id="JfD-4s-mcu"/>
+                        <constraint firstItem="aSq-7X-O5w" firstAttribute="top" secondItem="xSc-IV-8xe" secondAttribute="top" constant="50" id="M9j-gi-UDC"/>
+                        <constraint firstItem="fYZ-BQ-4yZ" firstAttribute="centerX" secondItem="xSc-IV-8xe" secondAttribute="centerX" id="UeA-Ia-PXR"/>
+                        <constraint firstAttribute="width" constant="250" id="brX-07-iw9"/>
+                        <constraint firstItem="fYZ-BQ-4yZ" firstAttribute="top" secondItem="VR4-Pb-JBK" secondAttribute="bottom" constant="25" id="iAO-1o-77K"/>
+                        <constraint firstItem="VR4-Pb-JBK" firstAttribute="centerX" secondItem="xSc-IV-8xe" secondAttribute="centerX" id="jNM-Bi-vaf"/>
+                        <constraint firstItem="9TY-bR-bcp" firstAttribute="top" secondItem="aSq-7X-O5w" secondAttribute="bottom" constant="10" id="yxY-3R-7CB"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="morentouxiang.png" translatesAutoresizingMaskIntoConstraints="NO" id="wYN-QW-ka3">
+                    <rect key="frame" x="110" y="99" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Tgj-To-lR3"/>
+                        <constraint firstAttribute="height" constant="100" id="r1S-1d-qNd"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="piG-ez-v10" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1zH-1f-EHn"/>
+                <constraint firstItem="xSc-IV-8xe" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="AJP-Mb-XrI"/>
+                <constraint firstItem="wYN-QW-ka3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Obw-0B-ZYU"/>
+                <constraint firstItem="xSc-IV-8xe" firstAttribute="top" secondItem="wYN-QW-ka3" secondAttribute="bottom" constant="-40" id="Zfn-Lv-PLq"/>
+                <constraint firstAttribute="trailing" secondItem="piG-ez-v10" secondAttribute="trailing" id="cpx-jC-HUe"/>
+                <constraint firstItem="piG-ez-v10" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eyz-gj-sks"/>
+                <constraint firstAttribute="bottom" secondItem="piG-ez-v10" secondAttribute="bottom" id="tZk-BS-onI"/>
+                <constraint firstItem="xSc-IV-8xe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tsH-wN-5Oe"/>
+            </constraints>
+            <point key="canvasLocation" x="254" y="308"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="aifaquanbeijing.png" width="640" height="1136"/>
+        <image name="dengludianji.png" width="436" height="68"/>
+        <image name="dengluzhanghaotubiao.png" width="40" height="40"/>
+        <image name="dengluzhengchang.png" width="436" height="68"/>
+        <image name="mimatubiao.png" width="40" height="40"/>
+        <image name="morentouxiang.png" width="200" height="200"/>
+        <image name="shanghuhaotubiao.png" width="40" height="40"/>
+    </resources>
+</document>

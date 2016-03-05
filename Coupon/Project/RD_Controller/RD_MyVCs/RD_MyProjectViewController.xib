@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RD_MyProjectViewController">
+            <connections>
+                <outlet property="tableView" destination="MVp-s6-BJJ" id="mx8-vn-vsr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQv-qk-uEL">
+                    <rect key="frame" x="0.0" y="85" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FY-EE-KtA">
+                            <rect key="frame" x="10" y="0.0" width="300" height="50"/>
+                            <animations/>
+                            <state key="normal" title="添加经营项目" image="addProject.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2JW-79-k5b"/>
+                        <constraint firstAttribute="bottom" secondItem="0FY-EE-KtA" secondAttribute="bottom" id="D1G-m0-zqg"/>
+                        <constraint firstItem="0FY-EE-KtA" firstAttribute="leading" secondItem="DQv-qk-uEL" secondAttribute="leading" constant="10" id="pX0-1S-qNP"/>
+                        <constraint firstItem="0FY-EE-KtA" firstAttribute="top" secondItem="DQv-qk-uEL" secondAttribute="top" id="rZB-pp-dYZ"/>
+                        <constraint firstAttribute="trailing" secondItem="0FY-EE-KtA" secondAttribute="trailing" constant="10" id="uio-PM-aaD"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MVp-s6-BJJ">
+                    <rect key="frame" x="0.0" y="137" width="320" height="431"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DQv-qk-uEL" secondAttribute="trailing" id="0QM-zr-WIa"/>
+                <constraint firstAttribute="trailing" secondItem="MVp-s6-BJJ" secondAttribute="trailing" id="SXZ-Fz-vn6"/>
+                <constraint firstAttribute="bottom" secondItem="MVp-s6-BJJ" secondAttribute="bottom" id="X4I-QE-fau"/>
+                <constraint firstItem="DQv-qk-uEL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zf6-u0-g1v"/>
+                <constraint firstItem="DQv-qk-uEL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="85" id="b4F-UL-TVf"/>
+                <constraint firstItem="MVp-s6-BJJ" firstAttribute="top" secondItem="DQv-qk-uEL" secondAttribute="bottom" constant="2" id="pxp-4f-Uie"/>
+                <constraint firstItem="MVp-s6-BJJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rrh-z3-zlj"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addProject.png" width="25" height="25"/>
+    </resources>
+</document>
